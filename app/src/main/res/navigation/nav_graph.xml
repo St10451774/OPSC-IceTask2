@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.iceapp.HomeFragment"
+        android:label="Home" >
+        <action
+            android:id="@+id/action_home_to_post"
+            app:destination="@id/postFragment" />
+        <action
+            android:id="@+id/action_home_to_add"
+            app:destination="@id/addDataFragment" />
+        <action
+            android:id="@+id/action_home_to_view"
+            app:destination="@id/viewDataFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.example.iceapp.PostFragment"
+        android:label="Posts" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/addDataFragment"
+        android:name="com.example.iceapp.AddDataFragment"
+        android:label="Add Data" >
+        <action
+            android:id="@+id/action_add_to_view"
+            app:destination="@id/viewDataFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewDataFragment"
+        android:name="com.example.iceapp.ViewDataFragment"
+        android:label="View Data" />
+</navigation>

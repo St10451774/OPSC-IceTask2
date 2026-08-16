@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_open_posts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Posts (Fragment 2)" />
+
+    <Space android:layout_width="match_parent" android:layout_height="12dp"/>
+
+    <Button
+        android:id="@+id/btn_add_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Data (Fragment 3)" />
+
+    <Space android:layout_width="match_parent" android:layout_height="12dp"/>
+
+    <Button
+        android:id="@+id/btn_view_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Data (Fragment 4)" />
+</LinearLayout>
